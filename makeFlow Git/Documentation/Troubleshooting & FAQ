@@ -1,0 +1,46 @@
+Troubleshooting & FAQ:
+
+Thank you for your interest in the makeFlow package. This is my first published package, 
+and I'm working hard to ensure it is successful in application. 
+Your feedback is greatly appreciated as it helps to make this a more refined package. 
+
+
+
+Problem:
+I've downloaded the .tar.gz file (or installed from CRAN), and can load the package with library(makeFlow), 
+but I get an error that it's impossible to find the makeFlow() function.
+
+Response:
+The quick solution is to use a high-level call from the package using the syntax of packageName+3colons+function(arguments) like follows:
+makeFlow:::makeFlow(data = , classFields = )
+
+
+
+Problem:
+Error in classFields-- object not found.
+
+Response:
+Make sure you are using quotations to select your classFields, and that all elements are 
+spelled the same as the corresponding column names (case sensitive).
+
+
+
+Problem:
+Palette "Set3" doesn't seem to support my inputs.
+
+Response:
+The most likely reason for this is too many unique categories over the extent of your specified columns. 
+"Set3" allows for 12. Though the makeFlow() function should output a warning with the necessary number of colors, 
+one can also use the function colorCount(data = , classFields = ). 
+In the makeFlow() function, use the argument gateColors to manually specify colors-- I recommend checking out the 
+R Color Cheatsheet, which can be found online.
+
+
+
+Is your question not here?
+Please send me an email at Krebs.AlexJ@gmail.com
+
+
+
+
+
