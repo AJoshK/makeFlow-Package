@@ -2,7 +2,9 @@ library(dplyr)
 library(RColorBrewer)
 library(makeFlow)
 
-# let's get the data in R:
+#NOTE: this is not the same data that comes with the makeFlow package.
+
+# let's get the data in R-- you can locate the .rda in the host folder:
 load(file = "LAShelters.rda")
 
 #keep what we need:
