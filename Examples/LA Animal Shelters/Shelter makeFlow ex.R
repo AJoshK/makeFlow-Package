@@ -3,6 +3,9 @@ library(dplyr)
 library(RColorBrewer)
 library(makeFlow)
 
+# Thanks for checking out this makeFlow example.
+# Consider adopting your next pet from a local shelter :)
+
 # let's get the data in R:
 # NOTE: this is not the same data that comes with the makeFlow package
 load(file = "LAShelters.rda")
